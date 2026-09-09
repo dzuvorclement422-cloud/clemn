@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A personal portfolio for secure, thoughtful software engineering." />
+  <title>Dzuvor Clement | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand-mark" href="#top" aria-label="Dzuvor Clement home">CD</a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Switch to light mode" title="Toggle theme">
+        <span aria-hidden="true">☼</span>
+      </button>
+      <button class="menu-button" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation">Menu</button>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#work">Work</a><a href="#cv">CV</a><a href="#contact">Contact</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero section-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> <span id="availabilityText">Available for selected projects</span></p>
+          <p class="kicker" id="roleText">Software engineer <span>·</span> security analyst <span>·</span> IoT builder</p>
+          <h1>Building <em>secure</em>, scalable software.</h1>
+          <p class="hero-text" id="bioText">I turn complex problems into reliable digital products, blending full-stack engineering with a security-first point of view.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
+            <a class="button button-quiet" href="https://github.com" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          </div>
+        </div>
+        <div class="portrait-wrap reveal reveal-delay">
+          <div class="portrait-orbit"></div>
+          <div class="portrait-placeholder" id="portrait" role="img" aria-label="Portrait placeholder">
+            <span>CD</span>
+          </div>
+          <div class="portrait-name" id="portraitName">Dzuvor Clement</div>
+          <div class="portrait-note" id="locationText">Based in Accra<br />Working globally</div>
+        </div>
+      </section>
+
+      <section class="marquee-band" aria-label="Specialties">
+        <div class="marquee-track"><span>PRODUCT ENGINEERING</span><b>✳</b><span>APPLICATION SECURITY</span><b>✳</b><span>IoT & CONNECTED SYSTEMS</span><b>✳</b><span>HUMAN-CENTERED SYSTEMS</span><b>✳</b><span>PRODUCT ENGINEERING</span><b>✳</b><span>APPLICATION SECURITY</span></div>
+      </section>
+
+      <section class="work-section section-grid" id="work">
+        <div class="section-intro">
+          <p class="section-label">01 / Selected work</p>
+          <h2>Things I’ve<br /><em>made useful.</em></h2>
+        </div>
+        <div class="work-content">
+          <div class="filter-bar" id="filters" aria-label="Filter projects"></div>
+          <div class="project-list" id="projectList"></div>
+        </div>
+      </section>
+
+      <section class="cv-section section-grid" id="cv">
+        <div class="section-intro"><p class="section-label">02 / Experience</p><h2>Work with<br /><em>intention.</em></h2></div>
+        <div class="timeline">
+          <article class="timeline-item"><span>2025 — Present</span><div><h3>Software Engineer & IoT Developer · Independent</h3><p>Designing secure web products and building connected IoT systems that turn real-world data into useful experiences.</p></div></article>
+          <a class="text-link" id="cvLink" href="#contact">Download full CV <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="contact-section section-grid" id="contact">
+        <div><p class="section-label">03 / Contact</p><h2>Let’s make<br /><em>something matter.</em></h2></div>
+        <div class="contact-copy"><p>Have a product, a knotty technical problem, or a security question? I’d like to hear about it.</p><a class="contact-email" href="mailto:dzuvorclement422@gmail.com">dzuvorclement422@gmail.com <span>↗</span></a><div class="contact-links"><a href="tel:+233593890955">Call: 0593890955</a><a href="https://wa.me/233256606449" target="_blank" rel="noreferrer">WhatsApp: 0256606449 <span>↗</span></a></div></div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 <span id="footerName">Dzuvor Clement</span></span><span>Built with curiosity <i>✳</i></span><span>Accra / Remote</span></footer>
+  </div>
+  <dialog id="projectDialog" class="project-dialog"><button class="dialog-close" id="dialogClose" aria-label="Close project details">×</button><div id="dialogContent"></div></dialog>
+  <script src="app.js?v=3"></script>
+</body>
+</html>

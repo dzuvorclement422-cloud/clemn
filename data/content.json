@@ -1,0 +1,23 @@
+{
+    "profile": {
+        "name": "Clement Dzuvor",
+        "role": "Building Useful, Secure & Modern Software",
+        "availability": "Available for selected projects",
+        "bio": "I'm an IT student passionate about software development, web technologies, networking, cybersecurity and Internet of Things (IoT)",
+        "location": "Based in Ho<br />Working globally",
+        "imageUrl": "uploads/d6029456d986af97745ec5a0.png",
+        "cvUrl": "https://dzuvorclement422@gmail.com/my-cv.jpg"
+    },
+    "projects": [
+        {
+            "title": "Library Management System",
+            "category": "software",
+            "year": "2026",
+            "description": "A system for organizing library books, members, borrowing, and returns in one place.",
+            "details": "The Library Management System helps make everyday library operations easier to manage by keeping books, members, and lending activity organized.",
+            "tags": "Web application · Database · Software engineering",
+            "projectUrl": "",
+            "projectFile": ""
+        }
+    ]
+}
